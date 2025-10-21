@@ -1,7 +1,20 @@
 import "./App.css";
 
+import backgroundVideo from "./images/background-video.mp4";
+
 function App() {
-  return <div className="text-3xl underline font-bold text-red-600">Hello</div>;
+  return (
+    <div>
+      <video
+        src={backgroundVideo}
+        autoPlay
+        loop
+        muted
+        playInline
+        className="background-video"
+      />
+    </div>
+  );
 }
 
 export default App;
